@@ -12,5 +12,9 @@ jobs:
         run: ./install.sh
       - name: run pullquote
         run: ./bin/pullquote -walk
-      - name: run git diff
-        run: git diff
+      - name: run git add
+        run: git add README.md
+      - name: run git commit
+        run: git commit -m "Update README.md"
+      - name: run git push
+        run: git push
