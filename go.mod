@@ -1,3 +1,3 @@
-module github.com/jwilner/go-tmpl
+module github.com/jwilner/furry-doodle
 
 go 1.15
