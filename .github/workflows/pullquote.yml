@@ -1,4 +1,4 @@
-name: golangci-lint
+name: pullquote
 on:
   push:
   pull_request:
@@ -11,6 +11,6 @@ jobs:
       - name: install pullquote
         run: ./install.sh
       - name: run pullquote
-        run: ./bin/pullquote
+        run: ./bin/pullquote -walk
       - name: run git diff
         run: git diff
