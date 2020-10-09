@@ -3,14 +3,14 @@ on:
   push:
   pull_request:
 jobs:
-  golangci:
-  name: lint
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - name: install pullquote
-      run: ./install.sh
-    - name: run pullquote
-      run: ./bin/pullquote
-    - name: run git diff
-      run: git diff
+  pullquote:
+    name: pullquote
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install pullquote
+        run: ./install.sh
+      - name: run pullquote
+        run: ./bin/pullquote
+      - name: run git diff
+        run: git diff
