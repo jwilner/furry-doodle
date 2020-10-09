@@ -14,6 +14,10 @@ jobs:
         run: ./bin/pullquote -walk
       - name: run git add
         run: git add README.md
+      - name: git email
+        run: git config user.email "you@example.com"
+      - name: git name
+        run: git config --global user.name "Your Name"
       - name: run git commit
         run: git commit -m "Update README.md"
       - name: run git push
