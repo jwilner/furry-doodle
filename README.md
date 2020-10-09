@@ -16,3 +16,13 @@ The template includes:
 Run `bootstrap.sh` once cloned to bootstrap and swap out names where necessary.
 
 <!-- jsonquote foo.json#bar -->
+```json
+{
+  "a": [
+    1,
+    2,
+    3
+  ]
+}
+```
+<!-- /jsonquote -->
